@@ -30040,9 +30040,9 @@ MonoBehaviour:
   interType: 3
   infoMessage: 
   dialogue:
-  - Skrrt
-  - YUH
-  - BIG pOgGiEs
+  - It's over Anakin
+  - I have the high ground
+  - Don't try it
 --- !u!114 &601439330580056214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30223,7 +30223,7 @@ PrefabInstance:
     - target: {fileID: 6358544506042205048, guid: 019ad96dbe7008340b7d0d270d171246,
         type: 3}
       propertyPath: interType
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8648146826580930253, guid: 019ad96dbe7008340b7d0d270d171246,
         type: 3}
@@ -30653,17 +30653,17 @@ PrefabInstance:
     - target: {fileID: 6845528612447263674, guid: cc2d33dba95cff749834ae4545867ecd,
         type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: Skrrt
+      value: It's over Anakin
       objectReference: {fileID: 0}
     - target: {fileID: 6845528612447263674, guid: cc2d33dba95cff749834ae4545867ecd,
         type: 3}
       propertyPath: dialogue.Array.data[1]
-      value: YUH
+      value: I have the high ground
       objectReference: {fileID: 0}
     - target: {fileID: 6845528612447263674, guid: cc2d33dba95cff749834ae4545867ecd,
         type: 3}
       propertyPath: dialogue.Array.data[2]
-      value: BIG pOgGiEs
+      value: Don't try it
       objectReference: {fileID: 0}
     - target: {fileID: 9167711678704285199, guid: cc2d33dba95cff749834ae4545867ecd,
         type: 3}
@@ -30942,6 +30942,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3335bdff254601c4cbc271f97a3fe467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interType: 0
+  interType: 2
   infoMessage: 
   dialogue: []
