@@ -21,6 +21,10 @@ public class InteractionObject : MonoBehaviour
     public string infoMessage;
     private Text infoText;
 
+    [Header("Dialogue Messages")]
+    public string[] dialogue;
+    private Text dialogueText;
+
     public void Start()
     {
         infoText = GameObject.Find("InfoText").GetComponent<Text>();
@@ -34,5 +38,23 @@ public class InteractionObject : MonoBehaviour
     public void Info()
     {
         infoText.text = infoMessage;
+        StartCoroutine(ShowInfo(infoMessage, 2.5f));
+    }
+
+    public void Pickup()
+    {
+        Debug.Log("Picked Up!");
+        this.gameObject.SetActive(false);
+    }
+    public void Dialogue()
+    {
+        GameObject.Find("DialogueManager").GetComponent<DialogueManager>().StartDialogue(dialogue);
+    }
+
+    IEnumerator ShowInfo(string message, float delay)
+    {
+        infoText.text = message;
+        yield return new WaitForSeconds(delay);
+        infoText.text = null;
     }
 }

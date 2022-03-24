@@ -29,6 +29,14 @@ public class PlayerInteraction : MonoBehaviour
         {
             currentInteractObjScript.Info();
         }
+        else if (currentInteractObjScript.interType == InteractionObject.InteractibleType.pickup)
+        {
+            currentInteractObjScript.Pickup();
+        }
+        else if (currentInteractObjScript.interType == InteractionObject.InteractibleType.dialogue)
+        {
+            currentInteractObjScript.Dialogue();
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other) //pings while in radius
